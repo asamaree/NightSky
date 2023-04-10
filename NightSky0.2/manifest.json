@@ -1,0 +1,18 @@
+{
+  "name": "NightSky",
+  "version": "0.2",
+  "manifest_version": 3,
+  "description": "Turn your BlueSky social experience up a notch with BlueSky After Dark! No official night mode? No problem!",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16": "night_sky_icon_16.png",
+    "32": "night_sky_icon_32.png",
+    "48": "night_sky_icon_48.png",
+    "128": "night_sky_icon_128.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://staging.bsky.app/*"],
+    "js": ["content.js"]
+  }]
+}
